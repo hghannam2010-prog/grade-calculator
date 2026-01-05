@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>حاسبة المعدل الذكية</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="home">
+    <h1>📊 حاسبة المعدل</h1>
+    <p>اختر المرحلة الدراسية</p>
+
+    <div class="box" onclick="openPage('page59')">5 - 9</div>
+<div class="box" onclick="openPage('page1012')">10 - 12</div>
+    
+    </div>
+
+   <button onclick="toggleDark()">🌙 دارك مود</button>
+</div>
+
+<!-- 5 - 9 -->
+<div id="page59" class="page">
+<h2>مواد 5 – 9</h2>
+<div class="form">
+<label>اسلامية <input id="a1"><input id="b1" value="100"></label>
+<label>عربي <input id="a2"><input id="b2" value="100"></label>
+<label>انجليزي <input id="a3"><input id="b3" value="100"></label>
+<label>رياضيات <input id="a4"><input id="b4" value="100"></label>
+<label>علوم <input id="a5"><input id="b5" value="100"></label>
+<label>اجتماعيات <input id="a6"><input id="b6" value="100"></label>
+<label>تكنولوجيا <input id="a7"><input id="b7" value="100"></label>
+<label>فنون <input id="a8"><input id="b8" value="100"></label>
+<label>رياضة <input id="a9"><input id="b9" value="100"></label>
+</div>
+<button onclick="calc59()">احسب</button>
+<h3 id="sum59"></h3>
+<h3 id="avg59"></h3>
+<p id="grade59"></p>
+<button onclick="goHome()">⬅ رجوع</button>
+</div>
+
+<!-- 10 - 12 -->
+<div id="page1012" class="page">
+<h2>الصفوف 10 – 12</h2>
+
+<div class="boxes">
+    <div class="box" onclick="open1012('tenth')">عاشر</div>
+    <div class="box" onclick="open1012('sci')">علمي</div>
+    <div class="box" onclick="open1012('lit')">أدبي</div>
+</div>
+
+<!-- عاشر -->
+<div id="tenth" class="sub">
+<div class="form">
+<label>تربية اسلامية <input id="t1"><input id="tf1" value="100"></label>
+<label>عربي <input id="t2"><input id="tf2" value="100"></label>
+<label>انجليزي <input id="t3"><input id="tf3" value="100"></label>
+<label>رياضيات <input id="t4"><input id="tf4" value="100"></label>
+<label>فيزياء <input id="t5"><input id="tf5" value="100"></label>
+<label>كيمياء <input id="t6"><input id="tf6" value="100"></label>
+<label>أحياء <input id="t7"><input id="tf7" value="100"></label>
+<label>جغرافيا فلسطين <input id="t8"><input id="tf8" value="100"></label>
+<label>تكنولوجيا <input id="t9"><input id="tf9" value="100"></label>
+<label>فنون <input id="t10"><input id="tf10" value="100"></label>
+<label>رياضة <input id="t11"><input id="tf11" value="100"></label>
+</div>
+<button onclick="calcSub('t','tf',11,'sum1012','avg1012','grade1012')">احسب</button>
+</div>
+
+<!-- علمي -->
+<div id="sci" class="sub">
+<div class="form">
+<label>اسلامية <input id="s1"><input id="sf1" value="100"></label>
+<label>عربي <input id="s2"><input id="sf2" value="100"></label>
+<label>انجليزي <input id="s3"><input id="sf3" value="100"></label>
+<label>رياضيات <input id="s4"><input id="sf4" value="200"></label>
+<label>فيزياء <input id="s5"><input id="sf5" value="100"></label>
+<label>كيمياء <input id="s6"><input id="sf6" value="100"></label>
+<label>أحياء <input id="s7"><input id="sf7" value="100"></label>
+<label>تكنولوجيا <input id="s8"><input id="sf8" value="100"></label>
+<label>فنون <input id="s9"><input id="sf9" value="100"></label>
+<label>رياضة <input id="s10"><input id="sf10" value="100"></label>
+</div>
+<button onclick="calcSub('s','sf',10,'sum1012','avg1012','grade1012')">احسب</button>
+</div>
+
+<!-- أدبي -->
+<div id="lit" class="sub">
+<div class="form">
+<label>اسلامية <input id="l1"><input id="lf1" value="100"></label>
+<label>عربي <input id="l2"><input id="lf2" value="150"></label>
+<label>انجليزي <input id="l3"><input id="lf3" value="150"></label>
+<label>رياضيات <input id="l4"><input id="lf4" value="100"></label>
+<label>جغرافيا <input id="l5"><input id="lf5" value="100"></label>
+<label>تاريخ <input id="l6"><input id="lf6" value="100"></label>
+<label>ثقافة علمية <input id="l7"><input id="lf7" value="100"></label>
+<label>تكنولوجيا <input id="l8"><input id="lf8" value="100"></label>
+<label>فنون <input id="l9"><input id="lf9" value="100"></label>
+<label>رياضة <input id="l10"><input id="lf10" value="100"></label>
+</div>
+<button onclick="calcSub('l','lf',10,'sum1012','avg1012','grade1012')">احسب</button>
+</div>
+
+<h3 id="sum1012"></h3>
+<h3 id="avg1012"></h3>
+<p id="grade1012"></p>
+
+<button onclick="goHome()">⬅ رجوع</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f2f2f2;
+    color: #111;
+    text-align: center;
+    transition: 0.4s;
+}
+
+h1, h2 {
+    margin-top: 20px;
+}
+
+.page {
+    display: none;
+    padding: 40px 20px;
+}
+
+#home {
+    display: block;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+
+/* مربعات المراحل */
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.box {
+    background: white;
+    padding: 40px 70px;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    position: relative;
+    z-index: 20;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    background: #ddd;
+}
+
+/* شبكة المواد */
+.form {
+    max-width: 900px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+label {
+    background: white;
+    padding: 15px 18px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    font-size: 17px;
+}
+
+label input {
+    width: 70px;
+    padding: 6px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    font-size: 15px;
+}
+
+/* أزرار */
+button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 17px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: #2b6cff;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1f4fd8;
+}
+
+/* نتائج */
+h3 {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* صفحات فرعية (عاشر، علمي، أدبي) */
+.sub {
+    display: none;
+}
+
+/* 🌙 دارك مود */
+body.dark {
+    background: #0f0f0f;
+    color: white;
+}
+
+body.dark .box,
+body.dark label {
+    background: #222;
+    color: white;
+}
+
+body.dark input {
+    background: #111;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark button {
+    background: #ff9800;
+    color: black;
+}
+
+body.dark button:hover {
+    background: #ffb74d;
+}
